@@ -3,6 +3,8 @@ It is inspired by apps like MyFitnessPal and provides a simple and interactive i
 
 
 Technologies Used
+
+
 Frontend: HTML, CSS
 Backend: Python (Flask)
 Templating Engine: Jinja2

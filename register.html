@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+</head>
+
+<body>
+
+<div class="box">
+
+<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" class="food-img">
+
+<h2>Create Account</h2>
+
+<form action="/save_user" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" required>
+<input type="number" name="age" placeholder="Age">
+<input type="number" name="height" placeholder="Height (cm)">
+<input type="number" name="weight" placeholder="Weight (kg)">
+
+<select name="goal">
+<option value="">Select Goal</option>
+<option>Lose Weight</option>
+<option>Maintain Weight</option>
+<option>Gain Weight</option>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p>Already have an account? <a href="/login">Login</a></p>
+
+</div>
+
+</body>
+</html>

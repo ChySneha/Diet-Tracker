@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diet Tracker Login</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='login.css') }}">
+
+</head>
+
+<body>
+
+<div class="mobile-wrapper">
+
+<div class="phone-card">
+
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352"
+class="food-img">
+
+<h2>Welcome👋</h2>
+
+{% if msg == "register_first" %}
+<div class="error">Kindly register first ❗</div>
+{% endif %}
+
+<form action="/check_login" method="POST">
+
+<input type="email" name="email"
+placeholder="Enter Email" required>
+
+<input type="password" name="password"
+placeholder="Enter Password" required>
+
+<button type="submit" class="login-btn">
+Login
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

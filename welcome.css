@@ -1,0 +1,47 @@
+body{
+font-family:Arial;
+background:#f5f6f8;
+text-align:center;
+overflow: hidden;
+}
+
+.container{
+padding-top:40px;
+}
+
+.brand{
+color:#1b66d1;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-bottom:40px;
+}
+
+.card{
+width:260px;
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:18px;
+color:#333;
+}
+
+.btn{
+background:#1b66d1;
+color:rgb(31, 192, 88);
+padding:15px 60px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}

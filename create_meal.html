@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Meal</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='meal.css') }}">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h2>Create Meal Plan</h2>
+
+<form action="/save_meal" method="POST">
+
+<input type="text" name="name" placeholder="Meal Name" required>
+
+<input type="text" name="image" placeholder="Image URL" required>
+
+<textarea name="description" placeholder="Description"></textarea>
+
+<input type="number" name="calories" placeholder="Calories">
+
+<input type="number" name="carbs" placeholder="Carbs %">
+
+<input type="number" name="proteins" placeholder="Proteins %">
+
+<input type="number" name="fats" placeholder="Fats %">
+
+<button type="submit">Save Meal</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meal Plans</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='meal.css') }}">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+
+<div class="logo"></div>
+
+<div class="menu">
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-chart-column"></i>
+<i class="fa-solid fa-users"></i>
+<i class="fa-solid fa-calendar-days"></i>
+<i class="fa-solid fa-square-check"></i>
+
+<div class="active">
+<i class="fa-solid fa-utensils"></i>
+</div>
+
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-trophy"></i>
+
+</div>
+
+</aside>
+
+
+<!-- Main Content -->
+<main class="main">
+
+<div class="header">
+<h1>Meal plans</h1>
+
+<button class="create-btn">
+<i class="fa-solid fa-plus"></i>
+Create meal plan
+</button>
+</div>
+
+
+<div class="filters">
+
+<div class="search">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="Search...">
+</div>
+
+<button class="pill active">Created by me</button>
+<button class="pill">All calories</button>
+
+</div>
+
+
+<!-- Meal Card 1 -->
+<div class="meal-card">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+
+<div class="meal-info">
+<h3>Vega Sustainable</h3>
+<p>Plan that helps you lose weight in a balance...</p>
+</div>
+
+<div class="stats">
+
+<div class="stat blue">
+<strong>1583</strong>
+<span>Kcal</span>
+</div>
+
+<div class="stat pink">
+<strong>50%</strong>
+<span>Carbs</span>
+</div>
+
+<div class="stat green">
+<strong>18%</strong>
+<span>Proteins</span>
+</div>
+
+<div class="stat orange">
+<strong>32%</strong>
+<span>Fats</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- Meal Card 2 -->
+<div class="meal-card">
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+
+<div class="meal-info">
+<h3>Paleo Athletic Plan</h3>
+<p>This paleo meal plan is especially for the act...</p>
+</div>
+
+<div class="stats">
+
+<div class="stat blue">
+<strong>1683</strong>
+<span>Kcal</span>
+</div>
+
+<div class="stat pink">
+<strong>56%</strong>
+<span>Carbs</span>
+</div>
+
+<div class="stat green">
+<strong>18%</strong>
+<span>Proteins</span>
+</div>
+
+<div class="stat orange">
+<strong>26%</strong>
+<span>Fats</span>
+</div>
+
+</div>
+</div>
+
+
+<!-- Meal Card 3 -->
+<div class="meal-card">
+
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+
+<div class="meal-info">
+<h3>Vega Protein Rich</h3>
+<p>Plan that provides an increased amount of...</p>
+</div>
+
+<div class="stats">
+
+<div class="stat blue">
+<strong>2474</strong>
+<span>Kcal</span>
+</div>
+
+<div class="stat pink">
+<strong>49%</strong>
+<span>Carbs</span>
+</div>
+
+<div class="stat green">
+<strong>24%</strong>
+<span>Proteins</span>
+</div>
+
+<div class="stat orange">
+<strong>27%</strong>
+<span>Fats</span>
+</div>
+
+</div>
+</div>
+
+</main>
+
+</div>
+
+</body>
+</html>
